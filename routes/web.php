@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TenantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('testing');
-});
+Route::get('/', [TenantController::class, 'getCategory']);

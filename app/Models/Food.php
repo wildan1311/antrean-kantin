@@ -25,4 +25,9 @@ class Food extends Model
     public function tenant(){
         return $this->belongsTo(Tenant::class);
     }
+
+    public function category()
+    {
+        return $this->hasOne(Category::class, 'id', 'category');
+    }
 }
