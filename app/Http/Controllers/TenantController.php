@@ -21,7 +21,7 @@ class TenantController extends Controller
         $foods = Tenant::with('foods')->findOrFail($id);
         return response()->json([
             "data"=>$foods,
-            "category"=>$this->getCategory($id)
+            "category"=>$this->getCategory($id),
         ]);
         // return new TenantFoodsResource($foods);
     }
@@ -34,5 +34,17 @@ class TenantController extends Controller
                     ->where('food.tenant_id', '=', $id)
                     ->pluck('category.name');
         return $query;
+    }
+
+    function getRangePrice($id){
+        $rangePrice = DB::table('food')
+                    ->join('tenant', 'tenant_id', '=', 'tenant.id')
+                    ->distinct()
+                    ->select('price')
+                    ->where('tenant_id', '=', $id)
+                    ->orderBy('price', 'asc')
+                    ->pluck('price')
+                    ->first();
+        return $rangePrice;
     }
 }

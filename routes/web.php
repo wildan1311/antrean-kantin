@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TenantController::class, 'getCategory']);
+Route::get('/', [TenantController::class, 'getRangePrice']);
