@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TenantController::class, 'getRangePrice']);
+Route::get('/', function(){
+    return view('welcome');
+});
