@@ -23,7 +23,7 @@ class TenantFoodsResource extends JsonResource
                 "id" => $food->id,
                 "name" => $food->name,
                 "price" => $food->price,
-                "category" => $food->category,
+                "category" => $food->categories->name,
                 "tenant_id" => $food->tenant_id,
                 "gambar" => asset('images/'.$food->gambar),
             ]);
