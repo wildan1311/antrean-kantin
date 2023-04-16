@@ -32,6 +32,7 @@ class TenantFoodsResource extends JsonResource
         return [
             'id'=>$this->id,
             'name'=>$this->name,
+            'subname'=>$this->subname,
             'gambar'=>asset('images/'.$this->gambar),
             'foods'=>$foods
         ];
