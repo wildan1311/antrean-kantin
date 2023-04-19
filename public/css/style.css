@@ -1,0 +1,75 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root {
+    font-family: Poppins;
+    font-family: Poppins !important;
+}
+
+.container-hero {
+    height: 500px;
+  }
+
+.color-primary{
+    background-color: #274F73;
+}
+
+/* span color */
+.logo-bro{
+    color: #FF5E5E;
+}
+
+/* font size */
+.logo-size{
+    font-size: 30px;
+}
+
+/* jumbotron */
+.jumbotron{
+    padding: 2rem 1rem;
+    /* background-color: #274F73; */
+}
+
+/* margin logo */
+
+
+/* container test */
+.container-test{
+    /* height: 50px; */
+    margin: 80px;
+}
+
+/* download */
+.bg-download{
+    background-color: #FF5E5E;
+}
+
+.icon-download{
+    margin-top: 20px;
+}
+
+.parent-deskripsi {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+    background: #274F73;
+    width: 80vw;
+    margin: 8vw 10vw;
+    /* height: 200px; */
+    border-radius: 10px;
+    align-items: center; /* mengatur parent secara vertikal ke tengah */
+    justify-content: center; /* mengatur parent secara horizontal ke tengah */
+  }
+
+
+  .child-gambar {
+    grid-area: 1 / 1 / 1 / 1;
+    /* opacity: 0.8; */
+    /* height: 500px; */
+    /* background-color: #FF5E5E ; */
+    /* width: 250px; */
+  }
+
+  /* font jumbotron */
+  .font-jumbotron {
+    font-size: 70px;
+  }
