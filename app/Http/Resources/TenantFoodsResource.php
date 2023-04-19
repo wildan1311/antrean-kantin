@@ -14,11 +14,28 @@ class TenantFoodsResource extends JsonResource
      */
     public function toArray($request)
     {
+        $foods = [];
+
+        // $category = 
+
+        foreach($this->foods as $food){
+            array_push($foods, [
+                "id" => $food->id,
+                "name" => $food->name,
+                "price" => $food->price,
+                "category" => $food->categories->name,
+                "tenant_id" => $food->tenant_id,
+                "gambar" => asset('images/'.$food->gambar),
+            ]);
+        }
+
         return [
             'id'=>$this->id,
             'name'=>$this->name,
+            'subname'=>$this->subname,
             'gambar'=>asset('images/'.$this->gambar),
-            'foods'=>$this->foods
+            'foods'=>$foods
         ];
     }
+    
 }

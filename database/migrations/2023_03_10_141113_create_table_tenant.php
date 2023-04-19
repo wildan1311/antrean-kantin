@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('tenant', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('subname');
             $table->string('gambar');
             $table->timestamps();
         });

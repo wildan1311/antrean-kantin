@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Controllers\TenantController;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class TenantResource extends JsonResource
@@ -14,10 +15,12 @@ class TenantResource extends JsonResource
      */
     public function toArray($request)
     {
+        $tenantController = new TenantController;
         return [
             "id" => $this->id,
             "name" => $this->name,
-            "gambar" => asset('images/'.$this->gambar)
+            "gambar" => asset('images/'.$this->gambar),
+            "range" => $tenantController->getRangePrice($this->id)
         ];
     }
 }
