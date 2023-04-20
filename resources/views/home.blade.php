@@ -34,62 +34,58 @@
             </div>
           </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#274F73" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,117.3C480,107,600,85,720,74.7C840,64,960,64,1080,74.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150"><path fill="#274F73" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,117.3C480,107,600,85,720,74.7C840,64,960,64,1080,74.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
     <section class="jumbotron">
         <div class="container text-center mb-5">
-            <h1 class="mb-5 fw-bold">What we serve</h1>
+            <h1 class="mb-5 fw-bold">About Me</h1>
+            <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column text-start align-items-center justify-content-center">
+                    {{-- <div class="rounded-circle bg-download p-3 d-flex align-items-center justify-content-center mb-3" style="height: 150px; width: 150px">
+                        <img src="{{asset('images/Food-Cart.png')}}" alt="icon-food-cart" width="100px">
+                    </div> --}}
+                    <h4 style="word-wrap: break-word">Masbro merupakan aplikasi berbasis mobile yang <br> memungkinkan penggunanya untuk melakukan <br> pembelian makanan dan minuman pada kantin Politeknik <br> Elektronika Negeri Surabaya. Selain memesan makanan <br> dan minuman, pengguna juga bisa menentukan kapan <br> makanan akan diantar dan dimana akan diantar. <br> Pembayaran pada pesanan akan dilakukan ketika <br> pesanan sudah datang. Aplikasi ini merupakan wujud <br> nyata dalam meningkatkan efisiensi pemesanan makanan <br> oleh dosen Politeknik Elektronika Negeri Surabaya.</h4>
+                </div>
 
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3 d-flex align-items-center justify-content-center mb-3" style="height: 250px; width: 250px">
+                        <img src="{{asset('images/pict-about.png')}}" alt="icon-food-cart" width="350px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron">
+        <div class="container text-center mb-5 mt-5">
+            <h1 class="mb-5 fw-bold">What we serve</h1>
             <div class="d-flex justify-content-around">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <div class="rounded-circle bg-download p-3 d-flex align-items-center justify-content-center mb-3" style="height: 150px; width: 150px">
                         <img src="{{asset('images/Food-Cart.png')}}" alt="icon-food-cart" width="100px">
-
                     </div>
                     <h4 style="word-wrap: break-word">Pilih Menu <br> Sesukamu</h4>
                 </div>
-
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <div class="rounded-circle bg-download p-3 d-flex align-items-center justify-content-center mb-3" style="height: 150px; width: 150px">
                         <img src="{{asset('images/Future.png')}}" alt="icon-food-cart" width="100px">
-
                     </div>
                     <h4 style="word-wrap: break-word">Jam Antar <br> Flexibel</h4>
                 </div>
-
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <div class="rounded-circle bg-download p-3 d-flex align-items-center justify-content-center mb-3" style="height: 150px; width: 150px">
                         <img src="{{asset('images/Bribery.png')}}" alt="icon-food-cart" width="100px">
-
                     </div>
                     <h4 style="word-wrap: break-word">Pembayaran <br> Di Tempat</h4>
                 </div>
-
             </div>
-
-
         </div>
     </section>
 
-
-
-
-
-    {{-- <section class="jumbotron bg-tester">
-        <div class="row justify-content-around">
-            <div class="flex-container">
-                <div>1</div>
-            </div>
-            <div class="icon-download">
-                <a href="#" class="btn text-light px-2 rounded-pill fw-bold bg-download">Download now!</a>
-            </div>
-        </div>
-    </section> --}}
-
-    <section class="jumbotron">
+    <section class="jumbotron mt-5 mb-5">
         <div class=" text-center">
             <div class="parent-deskripsi">
-                <div class="bg-tester2 text-start text-light p-3">
+                <div class="text-start text-light p-3">
                     <h2>
                         Get start With <span class="text-light fw-bold">
                             Mas<span class="logo-bro">Bro</span>
@@ -97,7 +93,6 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est id saepe quas repudiandae earum perferendis illo sapiente consequuntur sequi ut, aliquam aliquid. Inventore earum, eius quam sapiente dolor suscipit!
                     </p>
-
                     <div class="icon-download">
                         <a href="#" class="btn text-light px-2 rounded-pill fw-bold bg-download">Download now!</a>
                     </div>
@@ -109,18 +104,20 @@
         </div>
     </section>
 
+    <section class="jumbotron">
+        <div class="container text-center mb-5 mt-5">
+            <h1 class="mb-5 fw-bold">What Customer Says</h1>
+            <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column text-start align-items-center justify-content-center">
 
-    <div class="row">
-        <div class="col-6">
-
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center mb-3" style="height: 600px; width: 850px">
+                        <img src="{{asset('images/Customer-says.png')}}" alt="icon-food-cart" width="889px">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-
-
-        </div>
-    </div>
-
-
+    </section>
 
     <footer>
         <div class="container">
