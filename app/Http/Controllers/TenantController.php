@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\DB;
 class TenantController extends Controller
 {
     function getTenant(){
-        $tenants = Tenant::all();
+        $tenants = Tenant::with('foods')->get();
         return TenantResource::collection($tenants);
     }
 

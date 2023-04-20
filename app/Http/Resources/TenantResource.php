@@ -19,8 +19,10 @@ class TenantResource extends JsonResource
         return [
             "id" => $this->id,
             "name" => $this->name,
+            "subname"=> $this->subname,
             "gambar" => asset('images/'.$this->gambar),
-            "range" => $tenantController->getRangePrice($this->id)
+            "range" => $tenantController->getRangePrice($this->id),
+            "foods" => $this->foods
         ];
     }
 }
