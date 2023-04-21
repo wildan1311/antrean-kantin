@@ -20,22 +20,13 @@
 
 /* font size */
 .logo-size{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 /* jumbotron */
 .jumbotron{
     padding: 2rem 1rem;
     /* background-color: #274F73; */
-}
-
-/* margin logo */
-
-
-/* container test */
-.container-test{
-    /* height: 50px; */
-    margin: 80px;
 }
 
 /* download */
@@ -50,16 +41,15 @@
 .parent-deskripsi {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 250px 1fr;
     background: #274F73;
-    width: 80vw;
-    margin: 8vw 10vw;
-    /* height: 200px; */
+    width: 70vw;
+    margin: 13vw 14vw;
+    height: 250px;
     border-radius: 10px;
     align-items: center; /* mengatur parent secara vertikal ke tengah */
     justify-content: center; /* mengatur parent secara horizontal ke tengah */
   }
-
 
   .child-gambar {
     grid-area: 1 / 1 / 1 / 1;

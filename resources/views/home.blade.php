@@ -11,11 +11,10 @@
 <body>
     <nav class="navbar color-primary">
         <div class="container">
-
                 <span class="margin-logo navbar-brand text-light fw-bold logo-size">
                     Mas<span class="logo-bro">Bro</span>
                 </span>
-                <a href="#" class="btn bg-light text-dark px-2 rounded-pill fw-bold">Download now!</a>
+                <a href="#download" class="btn bg-light text-dark px-2 rounded-pill fw-bold">Download now!</a>
         </div>
     </nav>
 
@@ -23,7 +22,7 @@
         <div class="container text-center">
             <div class="row justify-content-around align-items-center">
               <div class="col-6">
-                  <img src="images/hero-container.png" class="img-fluid hero-margin" alt="...">
+                  <img src="{{asset('images/hero-container.png')}}" class="img-fluid hero-margin" alt="...">
               </div>
               <div class="col-6 d-flex justify-content-center align-items-center text-light">
                 <h1 class="fw-bold text-end font-jumbotron">Mau ke kantin <br>tapi mager?<br>ada
@@ -41,9 +40,6 @@
             <h1 class="mb-5 fw-bold">About Me</h1>
             <div class="d-flex justify-content-around">
                 <div class="d-flex flex-column text-start align-items-center justify-content-center">
-                    {{-- <div class="rounded-circle bg-download p-3 d-flex align-items-center justify-content-center mb-3" style="height: 150px; width: 150px">
-                        <img src="{{asset('images/Food-Cart.png')}}" alt="icon-food-cart" width="100px">
-                    </div> --}}
                     <h4 style="word-wrap: break-word">Masbro merupakan aplikasi berbasis mobile yang <br> memungkinkan penggunanya untuk melakukan <br> pembelian makanan dan minuman pada kantin Politeknik <br> Elektronika Negeri Surabaya. Selain memesan makanan <br> dan minuman, pengguna juga bisa menentukan kapan <br> makanan akan diantar dan dimana akan diantar. <br> Pembayaran pada pesanan akan dilakukan ketika <br> pesanan sudah datang. Aplikasi ini merupakan wujud <br> nyata dalam meningkatkan efisiensi pemesanan makanan <br> oleh dosen Politeknik Elektronika Negeri Surabaya.</h4>
                 </div>
 
@@ -82,13 +78,13 @@
         </div>
     </section>
 
-    <section class="jumbotron mt-5 mb-5">
+    <section class="jumbotron" id="download">
         <div class=" text-center">
             <div class="parent-deskripsi">
-                <div class="text-start text-light p-3">
+                <div class="text-start text-light">
                     <h2>
                         Get start With <span class="text-light fw-bold">
-                            Mas<span class="logo-bro">Bro</span>
+                            <br>Mas<span class="logo-bro">Bro</span>
                     </h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est id saepe quas repudiandae earum perferendis illo sapiente consequuntur sequi ut, aliquam aliquid. Inventore earum, eius quam sapiente dolor suscipit!
@@ -98,7 +94,7 @@
                     </div>
                 </div>
                 <div class="child-gambar">
-                    <img src="images/phone-download.png" class="img-fluid hero-margin" alt="...">
+                    <img src="{{asset('images/phone-download.png')}}" class="img-fluid hero-margin" alt="...">
                 </div>
             </div>
         </div>
