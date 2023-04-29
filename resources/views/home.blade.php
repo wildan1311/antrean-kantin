@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>MasBro-Canteen</title>
+
+    {{-- ====Bootstrap==== --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    {{-- ====StyleCss==== --}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+    {{-- ====FontAwesome==== --}}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    {{-- ====JavaScript==== --}}
+    <script src="{{asset('javascript/script.js')}}"></script>
 </head>
 <body>
     <nav class="navbar color-primary">
@@ -115,21 +125,96 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-           <div class="row">
-              <div class="col-md-6">
-                 <p>&copy; 2023 My Website. All Rights Reserved.</p>
-              </div>
-              <div class="col-md-6">
-                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#">About</a></li>
-                    <li class="list-inline-item"><a href="#">Contact</a></li>
-                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-                 </ul>
-              </div>
-           </div>
-        </div>
-     </footer>
+     <footer class="text-white pt-5 pb-4 color-primary">
+		<div class="container text-center text-md-left">
+			<div class="row text-center text-md-left">
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">MasBro Canteen</h5>
+					<p>Aplikasi mobile untuk memesan makanan dan minuman di kantin Politeknik Elektronika Negeri Surabaya. Pengguna dapat menentukan waktu dan lokasi pengantaran. Pembayaran dilakukan saat pesanan tiba, meningkatkan efisiensi pemesanan makanan oleh dosen di kampus.</p>
+				</div>
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Produk</h5>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> MasBro Canteen</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> MasBro Canteen</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> MasBro Canteen</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> MasBro Canteen</a>
+					</p>
+				</div>
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Kelebnihan Kami</h5>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Cepat</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Tepat Waktu</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;">Banyak pilihan</a>
+					</p>
+					<p>
+						<a href="#" class="text-white" style="text-decoration: none;"> Mudah Digunakan</a>
+					</p>
+				</div>
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h5 class="text-uppercase mb-4 font-weight-bold text-warning">hubungi kami</h5>
+					<p>
+						<i class="fas fa-home mr-3"></i>&nbsp;Team B1
+					</p>
+					<p>
+						<i class="fas fa-envelope mr-3"></i>&nbsp;teamb1@gmail.com
+					</p>
+					<p>
+						<i class="fas fa-phone mr-3"></i>&nbsp;+62 8162859445
+					</p>
+					<p>
+						<i class="fas fa-print	 mr-3"></i>&nbsp;+62 8132873892
+					</p>
+				</div>
+			</div>
+			<hr class="mb-4">
+			<div class="row align-items-center">
+				<div class="col-md-7 col-lg-8">
+					<p> Copyright ©2023 All rights reserved by:
+						<a href="#" style="text-decoration: none;">
+							<strong class="text-warning">MasBro Canteen</strong>
+						</a></p>
+				</div>
+				<div class="col-md-5 col-lg-4">
+					<div class="text-center text-md-right">
+
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-facebook"></i></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-twitter"></i></a>
+							</li>
+							{{-- <li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-google-plus"></i></a>
+							</li> --}}
+							{{-- <li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-linkedin-in"></i></a>
+							</li> --}}
+							<li class="list-inline-item">
+								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+										class="fab fa-youtube"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
