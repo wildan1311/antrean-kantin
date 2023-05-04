@@ -97,7 +97,7 @@
                             <br>Mas<span class="logo-bro">Bro</span>
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est id saepe quas repudiandae earum perferendis illo sapiente consequuntur sequi ut, aliquam aliquid. Inventore earum, eius quam sapiente dolor suscipit!
+                        Rasakan kemudahan dalam memesan makanan favoritmu dengan hanya beberapa sentuhan jari, download sekarang aplikasi kantin online MasBro dan nikmati pengalaman berbelanja yang lebih praktis dan efisien!
                     </p>
                     <div class="icon-download">
                         <a href="#" class="btn text-light px-2 rounded-pill fw-bold bg-download">Download now!</a>
@@ -125,7 +125,7 @@
         </div>
     </section>
 
-     <footer class="text-white pt-5 pb-4 color-primary">
+    <footer class="text-white pt-5 pb-4 color-primary">
 		<div class="container text-center text-md-left">
 			<div class="row text-center text-md-left">
 				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
