@@ -28,7 +28,8 @@ Route::get('/test/{id}', function($id){
     return response()->json(Customer::with('food')->findOrFail($id));
 });
 
-Route::get('/tenant', [TenantController::class, 'getTenant'])->middleware([CheckToken::class,'auth:sanctum']);
+// ->middleware([CheckToken::class,'auth:sanctum'])
+Route::get('/tenant', [TenantController::class, 'getTenant']);
 Route::put('/tenant/{id}', [TenantController::class, 'updateTenant'])->middleware([CheckToken::class,'auth:sanctum']);
 Route::get('/tenant/{id}', [TenantController::class, 'getFood']);
 Route::post('/transaction', [TransactionController::class, 'store'])->middleware('auth:sanctum');
