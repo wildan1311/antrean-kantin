@@ -16,8 +16,6 @@ class CheckToken
      */
     public function handle(Request $request, Closure $next)
     {
-        
-        print($request->header("Authorization"));
         return $next($request);
     }
 }
