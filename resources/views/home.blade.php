@@ -45,22 +45,29 @@
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150"><path fill="#274F73" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,117.3C480,107,600,85,720,74.7C840,64,960,64,1080,74.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
 
-    <section class="jumbotron">
-        <div class="container text-center mb-5">
-            <h1 class="mb-5 fw-bold">About Me</h1>
-            <div class="d-flex justify-content-around">
-                <div class="d-flex flex-column text-start align-items-center justify-content-center">
-                    <h4 style="word-wrap: break-word">Masbro merupakan aplikasi berbasis mobile yang <br> memungkinkan penggunanya untuk melakukan <br> pembelian makanan dan minuman pada kantin Politeknik <br> Elektronika Negeri Surabaya. Selain memesan makanan <br> dan minuman, pengguna juga bisa menentukan kapan <br> makanan akan diantar dan dimana akan diantar. <br> Pembayaran pada pesanan akan dilakukan ketika <br> pesanan sudah datang. Aplikasi ini merupakan wujud <br> nyata dalam meningkatkan efisiensi pemesanan makanan <br> oleh dosen Politeknik Elektronika Negeri Surabaya.</h4>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+                <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                    <img src="{{asset('images/pict-about.png')}}" class="img-fluid" alt="">
                 </div>
+                <div class="col-lg-6 pt-4 pt-lg-5 content">
+                    <h3>Sebenarnya apa sih masbro canteen itu?</h3>
+                    <p class="fst-italic">
+                        Masbro Canteen adalah aplikasi kantin online yang terletak di kampus PENS. Aplikasi ini memudahkan mahasiswa dan staf kampus untuk memesan makanan dan minuman secara online. Pengguna dapat menjelajahi menu dari berbagai tenant makanan yang bekerja sama dengan aplikasi ini dan memesan makanan dengan mudah dan cepat.
 
-                <div class="d-flex flex-column align-items-center justify-content-center">
-                    <div class="p-3 d-flex align-items-center justify-content-center mb-3" style="height: 250px; width: 250px">
-                        <img src="{{asset('images/pict-about.png')}}" alt="icon-food-cart" width="350px">
-                    </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i> Dosen atau mahasiswa dapat mengakses aplikasi ini melalui perangkat mereka dan dengan mudah menyelesaikan proses pemesanan.</li>
+                            <li><i class="fa fa-check"></i> Memberikan fleksibilitas dalam waktu pemesanan.</li>
+                            <li><i class="fa fa-check"></i> Bagi dosen juga mendapatkan fasilitas pengantaran makanan untuk meningkatkan efisiensi mengajar.</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+      </section>
+      <!-- End About Section -->
 
     <section class="jumbotron">
         <div class="container text-center mb-5 mt-5">
@@ -110,6 +117,11 @@
         </div>
     </section>
 
+    {{--====== Testimonial section ======--}}
+
+    {{-- new --}}
+
+    {{-- old --}}
     <section class="jumbotron">
         <div class="container text-center mb-5 mt-5">
             <h1 class="mb-5 fw-bold">What Customer Says</h1>
@@ -124,7 +136,9 @@
             </div>
         </div>
     </section>
+    {{--====== End testumonial section ======--}}
 
+    {{--====== footer section ======--}}
     <footer class="text-white pt-5 pb-4 color-primary">
 		<div class="container text-center text-md-left">
 			<div class="row text-center text-md-left">
@@ -216,5 +230,6 @@
 			</div>
 		</div>
 	</footer>
+    {{--====== End footer section ======--}}
 </body>
 </html>
