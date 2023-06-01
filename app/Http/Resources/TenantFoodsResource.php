@@ -16,7 +16,7 @@ class TenantFoodsResource extends JsonResource
     {
         $foods = [];
 
-        // $category = 
+        // $category =
 
         foreach($this->foods as $food){
             array_push($foods, [
@@ -24,6 +24,7 @@ class TenantFoodsResource extends JsonResource
                 "name" => $food->name,
                 "price" => $food->price,
                 "category" => $food->categories->name,
+                "status" => $food->status,
                 "tenant_id" => $food->tenant_id,
                 "gambar" => asset('images/'.$food->gambar),
             ]);
@@ -37,5 +38,5 @@ class TenantFoodsResource extends JsonResource
             'foods'=>$foods
         ];
     }
-    
+
 }

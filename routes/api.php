@@ -28,10 +28,19 @@ Route::get('/test/{id}', function($id){
     return response()->json(Customer::with('food')->findOrFail($id));
 });
 
-// ->middleware([CheckToken::class,'auth:sanctum'])
+// Fetch Tenant
 Route::get('/tenant', [TenantController::class, 'getTenant']);
-Route::put('/tenant/{id}', [TenantController::class, 'updateTenant'])->middleware([CheckToken::class,'auth:sanctum']);
+//fetch food each tenant
 Route::get('/tenant/{id}', [TenantController::class, 'getFood']);
-Route::post('/transaction', [TransactionController::class, 'store'])->middleware('auth:sanctum');
+//update status food
+Route::put('/tenant/{id}/food/{idfood}', [TenantController::class, 'updateTenant']);
+// create transaction
+Route::post('/transaction', [TransactionController::class, 'store']);
+// login
 Route::post('/login', [LoginController::class, 'login']);
+// login
+Route::post('/logout', [LoginController::class, 'logout']);
+// Update password user
 Route::put('/user/{id}', [UserController::class, 'update']);
+// login error
+Route::get('/login-error', [LoginController::class, 'errorLogin'])->named('errorLogin');

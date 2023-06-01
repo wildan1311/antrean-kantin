@@ -48,4 +48,14 @@ class TenantController extends Controller
                     ->first();
         return $rangePrice;
     }
+
+    function updateTenant($id, $idfood, Request $request){
+        $food = Food::findOrFail($idfood);
+        $statusReady = $request->status;
+        $food->update(['status' => $statusReady]);
+        return response()->json([
+            "message" => "success",
+            "data" => $food,
+        ]);
+    }
 }

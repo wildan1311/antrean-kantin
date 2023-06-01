@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Throwable;
 
@@ -14,7 +15,7 @@ class LoginController extends Controller
         $password = $request->input('password');
 
         try{
-            $user = User::where([
+            $user = User::with(['role'])->where([
                 ["email", "=", $email],
             ])->first();
 
@@ -24,6 +25,7 @@ class LoginController extends Controller
                 ], 400);
             }
         }catch(Throwable $e){
+            print($e);
             return response()->json([
                 "Message" => "Email or Password Cannot Found on Server"
             ], 400);
@@ -33,7 +35,24 @@ class LoginController extends Controller
 
         return response()->json([
             "Message" => "Login Berhasil",
+            "data" => $user,
             "token" => $token
         ]);
+    }
+
+    function errorLogin(){
+        return response()->json([
+            "status" => "failed",
+            "Message" => "you have not logged in",
+            ], 400);
+    }
+
+    function logout(Request $request){
+        $user = User::findOrFail($request->id);
+        $user->tokens()->delete();
+        return response()->json([
+            "status" => "success",
+            "Message" => "you have logged out",
+            ], 200);
     }
 }
