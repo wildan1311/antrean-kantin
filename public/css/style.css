@@ -130,13 +130,14 @@
     border-radius: 5px;
     transition: 0.5s;
     margin-top: 30px;
-    color: #fff;
-    border: 2px solid #fff;
+    color: #ffffff;
+    border: 2px solid #fffdff;
+    text-decoration: none;
   }
 
   #hero .btn-download-now:hover {
     background: #fff;
-    color: #5846f9;
+    color: #282828;
   }
 
   #hero .animated {
