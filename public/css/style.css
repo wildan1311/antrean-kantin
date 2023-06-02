@@ -364,6 +364,7 @@
 
   #download .download-btn:hover {
     background: #5777ba;
+    color: #ffffff;
   }
 
   #download .download-btn i {

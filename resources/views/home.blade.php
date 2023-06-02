@@ -161,7 +161,6 @@
         <div class="container p-5">
 
             <div class="section-title">
-                {{-- <span>Testimonial</span> --}}
                 <h2>Testimonial</h2>
                 <p>Berikut adalah testimonial user yang telah menggunakan Aplikasi Masbro Canteen</p>
             </div>
@@ -287,14 +286,6 @@
                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                                         class="fab fa-twitter"></i></a>
                             </li>
-                            {{-- <li class="list-inline-item">
-								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-										class="fab fa-google-plus"></i></a>
-							</li> --}}
-                            {{-- <li class="list-inline-item">
-								<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-										class="fab fa-linkedin-in"></i></a>
-							</li> --}}
                             <li class="list-inline-item">
                                 <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                                         class="fab fa-youtube"></i></a>
