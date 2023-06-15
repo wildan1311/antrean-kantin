@@ -19,13 +19,15 @@ class LoginController extends Controller
                 ["email", "=", $email],
             ])->first();
 
+            throw_if(!$user);
+
             if(!Hash::check($password, $user->password)){
                 return response()->json([
                     "Message" => "Email or Password Cannot Found on Server"
                 ], 400);
             }
         }catch(Throwable $e){
-            print($e);
+            // print($e);
             return response()->json([
                 "Message" => "Email or Password Cannot Found on Server"
             ], 400);
